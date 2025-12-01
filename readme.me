@@ -1,0 +1,75 @@
+AI Excel Assistant
+==================
+
+Small Vite + React + TypeScript starter for an AI-powered Excel assistant.
+
+Overview
+--------
+- Purpose: Create/edit/transform Excel files using AI-backed services in a web UI.
+- Stack: Vite, React, TypeScript, Tailwind CSS, Supabase (optional), XSLX for Excel parsing.
+
+Requirements
+------------
+- Node.js (recommend >= 18, project dependencies may require newer Node; some packages expect Node >=20.19)
+- npm (bundled with Node)
+
+Quick Setup
+-----------
+1. Install dependencies
+
+   ```powershell
+   cd "C:\Users\P Srinivas\Downloads\Ai-Excel-project\project"
+   npm install
+   ```
+
+2. Run the dev server
+
+   ```powershell
+   npm run dev
+   ```
+
+   - If port `5173` is already in use, Vite will try the next available port (e.g. `5174`). The terminal shows the final address, e.g. `http://localhost:5174/`.
+
+3. Build for production
+
+   ```powershell
+   npm run build
+   ```
+
+Notes
+-----
+- Three.js: If you plan to use the shader background or 3D parts, Three.js is added as a dependency. Import with:
+
+  ```ts
+  import * as THREE from 'three'
+  ```
+
+- Browserslist warning: you may see a message suggesting to run `npx update-browserslist-db@latest`. It's informational — run it if you want to silence the warning.
+
+- Vulnerabilities: `npm install` may show vulnerabilities. Use `npm audit` and `npm audit fix` to review and attempt fixes.
+
+- Dev server port in use: If dev server reports the port is in use, it will try the next port. To force a port, run:
+
+  ```powershell
+  setx PORT 5173; npm run dev
+  ```
+
+Where to edit
+-------------
+- Main app: `src/App.tsx`
+- Components: `src/components/*`
+- Services: `src/services/*`
+
+Helpful commands
+---------------
+- Install new dependency: `npm install <pkg> --save`
+- Start dev server: `npm run dev`
+- Build: `npm run build`
+- Typecheck: `npm run typecheck`
+
+If you want me to:
+- Restore the shader background using Three.js from the previous version
+- Add a polished `Footer` component and register it in `App.tsx`
+- Run a quick local verification build and report back
+
+— End of file
